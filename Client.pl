@@ -186,7 +186,6 @@ for my $peer (@$peers) {
                                 goto BLOCKLOOP;
                             }
                             else {
-                                Coro::AnyEvent::sleep 1;
                                 goto BLOCKLOOP;
                             }
                         }
