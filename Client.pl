@@ -172,8 +172,8 @@ for my $peer (@$peers) {
 
 
                             #if(defined($r_block_id) && $r_block_id == 7) {
-                                my $r_block_data_length = ($r_block_length - 9);
-                                #my $r_block_data_length = 16384;
+                                #my $r_block_data_length = ($r_block_length - 9);
+                                my $r_block_data_length = 16384;
 
                                 my $unpack = 'N N'. ' a' . $r_block_data_length;
                                 my ($r_block_index, $r_block_offset, $r_block_data) = unpack $unpack, $r_block_pack;
