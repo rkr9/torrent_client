@@ -171,7 +171,7 @@ for my $peer (@$peers) {
                             #my $r_block_data_length = 16384; #($r_block_length - 9);
 
 
-                            if(defined($r_block_id) && $r_block_id == 7) {
+                            #if(defined($r_block_id) && $r_block_id == 7) {
                                 my $r_block_data_length = ($r_block_length - 9);
                                 #my $r_block_data_length = 16384;
 
@@ -184,10 +184,10 @@ for my $peer (@$peers) {
 
                                 # ...
                                 goto BLOCKLOOP;
-                            }
-                            else {
-                                goto BLOCKLOOP;
-                            }
+                            #}
+                            #else {
+                            #    goto BLOCKLOOP;
+                            #}
                         }
                     }
                     else {
